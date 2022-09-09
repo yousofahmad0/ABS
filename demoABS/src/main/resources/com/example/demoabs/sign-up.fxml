@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="443.0" prefWidth="676.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.demoabs.SignUpController">
+    <children>
+        <AnchorPane prefHeight="443.0" prefWidth="150.0" style="-fx-background-color: ffdb0e;" />
+        <AnchorPane prefHeight="443.0" prefWidth="443.0" style="-fx-background-color: #FFFFFF;">
+            <children>
+                <ImageView fitHeight="73.0" fitWidth="184.0" layoutX="176.0" layoutY="-24.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/airplane4.jpg" />
+                    </image>
+                </ImageView>
+                <Label layoutX="26.0" layoutY="33.0" prefHeight="27.0" prefWidth="91.0" text="Username">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="26.0" layoutY="87.0" prefHeight="27.0" prefWidth="91.0" text="Password">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="tf_username" layoutX="141.0" layoutY="27.0" prefHeight="39.0" prefWidth="237.0">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                    </font>
+                </TextField>
+                <PasswordField fx:id="tf_password" accessibleRole="PASSWORD_FIELD" layoutX="141.0" layoutY="81.0" prefHeight="39.0" prefWidth="237.0">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                    </font>
+                </PasswordField>
+                <Button fx:id="button_signup" contentDisplay="CENTER" layoutX="267.0" layoutY="407.0" mnemonicParsing="false" prefHeight="12.0" prefWidth="135.0" style="-fx-background-color: ffdb0e; -fx-cursor: hand;" text="Sign Up">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                    </font>
+                </Button>
+            <Label layoutX="26.0" layoutY="243.0" prefHeight="27.0" prefWidth="91.0" text="Address">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="147.0" prefHeight="27.0" prefWidth="91.0" text="Full Name">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf_address" layoutX="141.0" layoutY="237.0" prefHeight="39.0" prefWidth="237.0">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="tf_fullname" layoutX="141.0" layoutY="141.0" prefHeight="39.0" prefWidth="237.0">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="18.0" />
+               </font>
+            </TextField>
+            <Label layoutX="26.0" layoutY="196.0" prefHeight="27.0" prefWidth="91.0" text="Gender">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="rb_male" layoutX="141.0" layoutY="200.0" mnemonicParsing="false" selected="true" style="-fx-cursor: hand;" text="Male">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="gend" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="rb_female" layoutX="260.0" layoutY="200.0" mnemonicParsing="false" style="-fx-cursor: hand;" text="Female" toggleGroup="$gend">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+            </RadioButton>
+            <Label layoutX="26.0" layoutY="299.0" prefHeight="27.0" prefWidth="91.0" text="Age">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf_age" layoutX="141.0" layoutY="294.0" prefHeight="39.0" prefWidth="237.0">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="18.0" />
+               </font>
+            </TextField>
+            <Label layoutX="200.0" layoutY="331.0" text="Age must be 18 or above " textFill="#3a6de4">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="3.0" layoutY="415.0" text="Aleardy a member?">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Button fx:id="button_log_in" layoutX="116.0" layoutY="412.0" mnemonicParsing="false" style="-fx-cursor: hand; -fx-background-color: transperent;" text="Log in!" textFill="#3a6de4" underline="true">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="13.0" />
+               </font>
+            </Button>
+            <Label layoutX="26.0" layoutY="358.0" prefHeight="27.0" prefWidth="98.0" text="Phone" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf_phone" layoutX="141.0" layoutY="352.0" prefHeight="39.0" prefWidth="237.0" promptText="+961********">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="18.0" />
+               </font>
+            </TextField>
+            </children>
+        </AnchorPane>
+      <AnchorPane prefHeight="443.0" prefWidth="150.0" style="-fx-background-color: ffdb0e;" />
+    </children>
+</HBox>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="499.0" prefWidth="944.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.demoabs.FlightsController">
+   <children>
+      <AnchorPane layoutY="-1.0" prefHeight="41.0" prefWidth="1134.0" style="-fx-background-color: ffdb0e;">
+         <children>
+            <Label fx:id="label_welcome" layoutX="10.0" layoutY="10.0" prefHeight="22.0" prefWidth="244.0" text="Welcome ">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="button_dash" alignment="BOTTOM_CENTER" layoutX="247.0" layoutY="1.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="105.0" style="-fx-background-color: transberent; -fx-cursor: hand;" text="Dashboard" underline="true">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <HBox layoutY="40.0" prefHeight="459.0" prefWidth="1134.0">
+         <children>
+            <AnchorPane prefHeight="459.0" prefWidth="188.0" style="-fx-background-color: Gray;">
+               <children>
+                  <Button fx:id="button_logout" layoutX="61.0" layoutY="425.0" mnemonicParsing="false" style="-fx-background-color: ffdb0e; -fx-cursor: hand;" text="Logout">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <VBox alignment="TOP_CENTER" prefHeight="411.0" prefWidth="188.0">
+                     <children>
+                        <Button fx:id="button_users" mnemonicParsing="false" prefHeight="42.0" prefWidth="226.0" style="-fx-background-color: transberent; -fx-cursor: hand;" text="Users" textFill="#ffdb0e" underline="true">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="button_Flights" mnemonicParsing="false" prefHeight="42.0" prefWidth="226.0" style="-fx-background-color: transberent; -fx-cursor: hand;" text="Flights" textFill="#ffdb0e" underline="true">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="button_Airlines" mnemonicParsing="false" prefHeight="42.0" prefWidth="237.0" style="-fx-background-color: transberent; -fx-cursor: hand;" text="Airline" textFill="#ffdb0e" underline="true">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="button_Reservations" mnemonicParsing="false" prefHeight="42.0" prefWidth="237.0" style="-fx-background-color: transberent; -fx-cursor: hand;" text="Reservations" textFill="#ffdb0e" underline="true">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="button_Makes" mnemonicParsing="false" prefHeight="42.0" prefWidth="237.0" style="-fx-background-color: transberent; -fx-cursor: hand;" text="Makes" textFill="#ffdb0e" underline="true">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="button_Passenger" layoutX="10.0" layoutY="170.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="237.0" style="-fx-background-color: transberent; -fx-cursor: hand;" text="Passengers" textFill="#ffdb0e" underline="true">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <Separator prefWidth="200.0" style="-fx-border-color: black;" />
+                        <Button fx:id="button_AIF" mnemonicParsing="false" prefHeight="42.0" prefWidth="237.0" style="-fx-background-color: transberent; -fx-cursor: hand;" text="Absents in Flight#" textFill="#ffdb0e">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="button_WELR" mnemonicParsing="false" prefHeight="42.0" prefWidth="237.0" style="-fx-background-color: transberent; -fx-cursor: hand;" text="Who Else Reserve for#" textFill="#ffdb0e">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="button_TN1R" mnemonicParsing="false" prefHeight="42.0" prefWidth="237.0" style="-fx-background-color: transberent; -fx-cursor: hand;" text="Total# for one Reserve" textFill="#ffdb0e">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="button_TNPInF" alignment="CENTER" mnemonicParsing="false" prefHeight="49.0" prefWidth="188.0" style="-fx-background-color: transberent; -fx-cursor: hand;" text="Total# of Passenger for Flight#" textAlignment="CENTER" textFill="#ffdb0e" wrapText="true">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="button_UTA" mnemonicParsing="false" prefHeight="42.0" prefWidth="237.0" style="-fx-background-color: transberent; -fx-cursor: hand;" text="Update Tic_Amount" textFill="#ffdb0e">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="459.0" prefWidth="956.0" style="-fx-background-color: white;">
+               <children>
+                  <HBox alignment="CENTER_LEFT" layoutY="414.0" prefHeight="44.0" prefWidth="946.0" spacing="3.0">
+                     <children>
+                        <TextField fx:id="tf_df" prefHeight="38.0" prefWidth="65.0" promptText="Flight#">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <TextField fx:id="tf_date" layoutX="15.0" layoutY="13.0" prefHeight="38.0" prefWidth="90.0" promptText="Date">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="tf_ano" layoutX="107.0" layoutY="13.0" prefHeight="38.0" prefWidth="77.0" promptText="Airline#">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="tf_dest" layoutX="199.0" layoutY="13.0" prefHeight="38.0" prefWidth="95.0" promptText="Destination">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="tf_start" layoutX="291.0" layoutY="13.0" prefHeight="38.0" prefWidth="73.0" promptText="Start">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="tf_arrival" layoutX="383.0" layoutY="13.0" prefHeight="38.0" prefWidth="73.0" promptText="Arrival">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="tf_cthrou" layoutX="417.0" layoutY="13.0" prefHeight="38.0" prefWidth="125.0" promptText="Cthrou">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="tf_seats" layoutX="488.0" layoutY="13.0" prefHeight="38.0" prefWidth="89.0" promptText="Seats Num">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="tf_fno" layoutX="513.0" layoutY="13.0" prefHeight="38.0" prefWidth="103.0" promptText="Defualt Price">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </TextField>
+                        <Button fx:id="add" mnemonicParsing="false" prefHeight="39.0" prefWidth="52.0" style="-fx-background-color: Green; -fx-cursor: hand;" text="ADD" textFill="#ffdb0e">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="delete" layoutX="465.0" layoutY="13.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="67.0" style="-fx-background-color: RED; -fx-cursor: hand;" text="Delete" textFill="#ffdb0e">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <TableView fx:id="flightsTable" prefHeight="411.0" prefWidth="946.0">
+                     <columns>
+                        <TableColumn fx:id="col_id" minWidth="5.0" prefWidth="59.0" text="Flight#" />
+                        <TableColumn fx:id="col_date" prefWidth="116.0" text="Date" />
+                        <TableColumn fx:id="col_idA" prefWidth="69.0" text="Airline#" />
+                        <TableColumn fx:id="col_dest" prefWidth="83.0" text="Destination" />
+                        <TableColumn fx:id="col_start" prefWidth="70.0" text="Start" />
+                        <TableColumn fx:id="col_arrival" minWidth="0.0" prefWidth="70.0" text="Arrival" />
+                        <TableColumn fx:id="col_countryThro" prefWidth="329.0" text="Through Countries" />
+                        <TableColumn fx:id="col_seat" minWidth="8.0" prefWidth="52.0" text="Seats#" />
+                        <TableColumn fx:id="col_price" minWidth="8.0" prefWidth="97.0" text="Default Price" />
+                     </columns>
+                  </TableView>
+               </children></AnchorPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

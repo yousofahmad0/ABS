@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="545.0" prefWidth="750.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.demoabs.LoggedInController">
+   <children>
+      <Button fx:id="button_logout" layoutX="674.0" layoutY="513.0" mnemonicParsing="false" style="-fx-background-color: ffdb0e; -fx-cursor: hand;" text="Logout">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutY="-1.0" prefHeight="41.0" prefWidth="753.0" style="-fx-background-color: ffdb0e;">
+         <children>
+            <Label fx:id="label_welcome" layoutX="10.0" layoutY="10.0" text="Welcome,choose a Flight!">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="label_FlightReminder" layoutX="409.0" prefHeight="41.0" prefWidth="354.0" textFill="#0500a1" wrapText="true">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ScrollPane hbarPolicy="NEVER" layoutY="40.0" prefHeight="466.0" prefWidth="763.0">
+         <content>
+            <FlowPane hgap="10.0" prefHeight="451.0" prefWidth="762.0" vgap="10.0">
+               <children>
+                  <AnchorPane prefHeight="155.0" prefWidth="246.0">
+                     <children>
+                        <ImageView fitHeight="112.0" fitWidth="205.0" layoutX="19.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/paris-top.jpg" />
+                           </image>
+                           <viewport>
+                              <Rectangle2D />
+                           </viewport>
+                        </ImageView>
+                        <Label layoutX="108.0" layoutY="125.0" text="Through:">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="125.0" text="Date:">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="label_FDate" layoutX="41.0" layoutY="126.0" text="9/12/2021">
+                           <font>
+                              <Font name="Arial" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="LabelCountiesThrough" layoutX="162.0" layoutY="126.0" text="Greece Italy">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="label_FTimestart" layoutX="69.0" layoutY="137.0" text="13:30pm" />
+                        <Label fx:id="label_FTimearrival" layoutX="193.0" layoutY="137.0" prefHeight="17.0" prefWidth="46.0" text="12:30pm" />
+                        <Label layoutX="4.0" layoutY="137.0" text="Flight start:">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="125.0" layoutY="137.0" text="Flight arive:">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="button_1France" contentDisplay="BOTTOM" layoutX="19.0" layoutY="13.0" mnemonicParsing="false" prefHeight="112.0" prefWidth="205.0" style="-fx-background-color: transberent; -fx-cursor: hand;" text="France">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="16.0" />
+                           </font>
+                        </Button>
+                        <Label fx:id="label_FPrice" layoutX="104.0" layoutY="92.0" text="500" textFill="#ffdb0e">
+                           <font>
+                              <Font name="Century Gothic Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="60.0" layoutY="149.0" text="Airline:">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="label_FAir" layoutX="105.0" layoutY="149.0" text="YousAirline">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="133.0" layoutY="92.0" text="\$" textFill="#ffdb0e">
+                           <font>
+                              <Font name="Century Gothic Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="Label_FlightNo" layoutX="118.0" layoutY="2.0" text="1" textFill="#2600ff">
+                           <font>
+                              <Font name="Bodoni MT Condensed Bold" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="155.0" prefWidth="246.0">
+                     <children>
+                        <ImageView fitHeight="112.0" fitWidth="205.0" layoutX="19.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                           <viewport>
+                              <Rectangle2D />
+                           </viewport>
+                           <image>
+                              <Image url="@images/amr.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="108.0" layoutY="125.0" text="Through:">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="125.0" text="Date:">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="label_FDate1" layoutX="41.0" layoutY="126.0" text="1/5/2021">
+                           <font>
+                              <Font name="Arial" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="LabelCountiesThrough1" layoutX="162.0" layoutY="126.0" text="Italy,Spain">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="label_FTimestart1" layoutX="70.0" layoutY="137.0" text="4:30pm" />
+                        <Label fx:id="label_FTimearrival1" layoutX="193.0" layoutY="137.0" prefHeight="17.0" prefWidth="46.0" text="1:30pm" />
+                        <Label layoutX="4.0" layoutY="137.0" text="Flight start:">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="125.0" layoutY="137.0" text="Flight arive:">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="button_1France1" contentDisplay="BOTTOM" layoutX="19.0" layoutY="13.0" mnemonicParsing="false" prefHeight="112.0" prefWidth="205.0" style="-fx-background-color: transberent; -fx-cursor: hand;" text="Americe">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="16.0" />
+                           </font>
+                        </Button>
+                        <Label fx:id="label_FPrice1" layoutX="104.0" layoutY="92.0" text="900" textFill="#ffdb0e">
+                           <font>
+                              <Font name="Century Gothic Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="60.0" layoutY="149.0" text="Airline:">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="label_FAir1" layoutX="105.0" layoutY="149.0" text="YousAirline">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="133.0" layoutY="92.0" text="\$" textFill="#ffdb0e">
+                           <font>
+                              <Font name="Century Gothic Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="Label_FlightNo1" layoutX="118.0" layoutY="2.0" text="2" textFill="#2600ff">
+                           <font>
+                              <Font name="Bodoni MT Condensed Bold" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="155.0" prefWidth="246.0">
+                     <children>
+                        <ImageView fitHeight="112.0" fitWidth="205.0" layoutX="19.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                           <viewport>
+                              <Rectangle2D />
+                           </viewport>
+                           <image>
+                              <Image url="@images/itl.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="108.0" layoutY="125.0" text="Through:">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="125.0" text="Date:">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="label_FDate2" layoutX="41.0" layoutY="126.0" text="11/7/2021">
+                           <font>
+                              <Font name="Arial" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="LabelCountiesThrough2" layoutX="162.0" layoutY="126.0" text="Singafura,UK">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="label_FTimestart2" layoutX="72.0" layoutY="137.0" text="6:30pm" />
+                        <Label fx:id="label_FTimearrival2" layoutX="193.0" layoutY="137.0" prefHeight="17.0" prefWidth="46.0" text="14:00pm" />
+                        <Label layoutX="4.0" layoutY="137.0" text="Flight start:">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="125.0" layoutY="137.0" text="Flight arive:">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="button_1France2" contentDisplay="BOTTOM" layoutX="19.0" layoutY="13.0" mnemonicParsing="false" prefHeight="112.0" prefWidth="205.0" style="-fx-background-color: transberent; -fx-cursor: hand;" text="Italy">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="16.0" />
+                           </font>
+                        </Button>
+                        <Label fx:id="label_FPrice2" layoutX="104.0" layoutY="92.0" text="734.99" textFill="#ffdb0e">
+                           <font>
+                              <Font name="Century Gothic Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="60.0" layoutY="149.0" text="Airline:">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="label_FAir2" layoutX="105.0" layoutY="149.0" text="FLYOSEF">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="157.0" layoutY="92.0" text="\$" textFill="#ffdb0e">
+                           <font>
+                              <Font name="Century Gothic Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="Label_FlightNo2" layoutX="118.0" layoutY="2.0" text="3" textFill="#2600ff">
+                           <font>
+                              <Font name="Bodoni MT Condensed Bold" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="155.0" prefWidth="246.0">
+                     <children>
+                        <ImageView fitHeight="112.0" fitWidth="205.0" layoutX="19.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                           <viewport>
+                              <Rectangle2D />
+                           </viewport>
+                           <image>
+                              <Image url="@images/can.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="108.0" layoutY="125.0" text="Through:">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="125.0" text="Date:">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="label_FDate3" layoutX="41.0" layoutY="126.0" text="11/7/2021">
+                           <font>
+                              <Font name="Arial" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="LabelCountiesThrough3" layoutX="162.0" layoutY="126.0" text="Spain">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="label_FTimestart3" layoutX="71.0" layoutY="137.0" text="6:30pm" />
+                        <Label fx:id="label_FTimearrival3" layoutX="193.0" layoutY="137.0" prefHeight="17.0" prefWidth="46.0" text="15:00am" />
+                        <Label layoutX="4.0" layoutY="137.0" text="Flight start:">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="125.0" layoutY="137.0" text="Flight arive:">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="button_1France3" contentDisplay="BOTTOM" layoutX="19.0" layoutY="13.0" mnemonicParsing="false" prefHeight="112.0" prefWidth="205.0" style="-fx-background-color: transberent; -fx-cursor: hand;" text="Canada">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="16.0" />
+                           </font>
+                        </Button>
+                        <Label fx:id="label_FPrice3" layoutX="104.0" layoutY="92.0" text="849.99" textFill="#ffdb0e">
+                           <font>
+                              <Font name="Century Gothic Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="60.0" layoutY="149.0" text="Airline:">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="label_FAir3" layoutX="105.0" layoutY="149.0" text="FLYMM">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="157.0" layoutY="92.0" text="\$" textFill="#ffdb0e">
+                           <font>
+                              <Font name="Century Gothic Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="Label_FlightNo3" layoutX="118.0" layoutY="2.0" text="4" textFill="#2600ff">
+                           <font>
+                              <Font name="Bodoni MT Condensed Bold" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </FlowPane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

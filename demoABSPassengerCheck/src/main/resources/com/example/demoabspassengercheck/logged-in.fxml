@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="482.0" prefWidth="683.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.demoabspassengercheck.LoggedInController">
+   <left>
+      <Pane prefHeight="355.0" prefWidth="183.0" style="-fx-background-color: FFDB0E;" BorderPane.alignment="CENTER" />
+   </left>
+   <bottom>
+      <Pane prefHeight="147.0" prefWidth="683.0" style="-fx-background-color: FFDB0E;" BorderPane.alignment="CENTER" />
+   </bottom>
+   <right>
+      <Pane prefHeight="355.0" prefWidth="177.0" style="-fx-background-color: ffdb0e;" BorderPane.alignment="CENTER" />
+   </right>
+   <top>
+      <StackPane prefHeight="41.0" prefWidth="683.0" style="-fx-background-color: ffdb0e;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="37.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../airplaneY2.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="40.0" prefWidth="196.0" text="Passenger Checking">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="bt_close" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0" style="-fx-cursor: hand; -fx-background-color: ffdb0e;">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../close(1).png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </StackPane>
+   </top>
+   <center>
+      <StackPane prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="15.0">
+               <children>
+                  <ImageView fitHeight="161.0" fitWidth="139.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../airplane4.jpg" />
+                     </image>
+                  </ImageView>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="12.0">
+                     <children>
+                        <Label fx:id="label_welcome" text="Welcome , to your Flight.">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="25.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                     <children>
+                        <Label prefHeight="31.0" prefWidth="468.0" text="Number of children who came with you">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="tf_CameChildren" accessibleRole="PASSWORD_FIELD" prefHeight="44.0" prefWidth="108.0">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="24.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <Button fx:id="button_done" mnemonicParsing="false" style="-fx-cursor: hand; -fx-background-color: ffdb0e;" text="Done">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="21.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                     <VBox.margin>
+                        <Insets top="35.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </StackPane>
+   </center>
+</BorderPane>
