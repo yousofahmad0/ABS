@@ -40,3 +40,5 @@ In the dashboard, another button under the name of absent in flight appears, the
 A button for who else reserve appears. The admin enters the reservation number and submit it. A statement appears stating the number of users under this reservation. Also, a button for the total number of one reserve is present, we click it and then write the number of reservations, then a statement stating the total number of members for this reservation appears. Also, a button for the total number of passenger for one flight appears, we enter the flight number and submit. The passenger ID, username, full name, and children appear. A statement stating the total number of passenger on this flight appears. An update ticket cost button is also present, where admin should enter the reservation number and the new ticket amount he wants to change.
 
 ![hyy](https://user-images.githubusercontent.com/104697889/189723410-e1fc00a1-6cbe-44d8-a449-288c9c554b4c.PNG)
+
+#Passenger checker
