@@ -25,6 +25,8 @@ Once his reservation is completed, the user would be able to return to the welco
 
 ![33](https://user-images.githubusercontent.com/104697889/189726139-abf66578-23a7-4d3b-8abd-81edab0ed60c.PNG)
 
+The application is managed by an admin. The admin logs in by entering his username and password. A specific dashboard will appear. The dashboard contains very important information. At the right of the dashboard, multiple buttons appear for the users, flights, airlines, reservations, makes, and passengers. In the center of the dashboard, each button also appears in the form of an icon.
+
 ![4](https://user-images.githubusercontent.com/104697889/189723375-1b045844-8a03-4e59-bc78-58bff457ba39.PNG)
 ![hy5](https://user-images.githubusercontent.com/104697889/189723389-4f40831a-9b57-4ba9-be6a-327655d2b218.PNG)
 ![hyy](https://user-images.githubusercontent.com/104697889/189723410-e1fc00a1-6cbe-44d8-a449-288c9c554b4c.PNG)
