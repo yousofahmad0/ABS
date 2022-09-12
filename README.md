@@ -20,6 +20,11 @@ When the user chooses the flight, another interface appears, where filling a for
 Once done, he clicks the reserve and pay button. A new interface pops out, it shows the number of tickets booked, the total amount of money required, and the name of the users at the top. Then, the user should enter the card number, the cardholder’s name, expiry date of the card, and the security code. Then, he clicks the place reservation and pay button.  
 
 ![hy4](https://user-images.githubusercontent.com/104697889/189723349-80e4a2ce-2653-4384-bc6a-430d354e6b4d.png)
+
+Once his reservation is completed, the user would be able to return to the welcome page. A small paragraph appears at the top of the interface indicating the flight destination, the flight date, the time at which the flight will leave. Then, the user could log out. If the user logs in at any time, the reminder with the flight information will always appear until his flight date.
+
+![33](https://user-images.githubusercontent.com/104697889/189726139-abf66578-23a7-4d3b-8abd-81edab0ed60c.PNG)
+
 ![4](https://user-images.githubusercontent.com/104697889/189723375-1b045844-8a03-4e59-bc78-58bff457ba39.PNG)
 ![hy5](https://user-images.githubusercontent.com/104697889/189723389-4f40831a-9b57-4ba9-be6a-327655d2b218.PNG)
 ![hyy](https://user-images.githubusercontent.com/104697889/189723410-e1fc00a1-6cbe-44d8-a449-288c9c554b4c.PNG)
