@@ -42,3 +42,9 @@ A button for who else reserve appears. The admin enters the reservation number a
 ![hyy](https://user-images.githubusercontent.com/104697889/189723410-e1fc00a1-6cbe-44d8-a449-288c9c554b4c.PNG)
 
 <h1>Passenger checker</h1>
+
+At the airport, the user has to log in as a passenger checker so that the system takes his attendance. The passenger will enter his username and password. Once he logs in, a welcoming interface appears indicating the flight destination. The passenger would be asked to validate the number of children who came with him. 
+
+![pp](https://user-images.githubusercontent.com/104697889/189727624-84654030-1486-4820-a278-7e089d6be86b.PNG)
+![bbb](https://user-images.githubusercontent.com/104697889/189727702-38d5100e-981d-4477-aaf3-9863f5b43ce1.PNG)
+
