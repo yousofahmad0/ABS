@@ -28,5 +28,12 @@ Once his reservation is completed, the user would be able to return to the welco
 The application is managed by an admin. The admin logs in by entering his username and password. A specific dashboard will appear. The dashboard contains very important information. At the right of the dashboard, multiple buttons appear for the users, flights, airlines, reservations, makes, and passengers. In the center of the dashboard, each button also appears in the form of an icon.
 
 ![4](https://user-images.githubusercontent.com/104697889/189723375-1b045844-8a03-4e59-bc78-58bff457ba39.PNG)
+
+Once he clicks on the button, a table appears with all details specific to each topic. The users button once clicked, a table containing all the registered users appear. In the table, all the data filled by the users appear as columns, from the Id of the user, full name, gender, address, age, number of children to the phone number. The admin can also add or delete any user.
+
+The flight button once clicked, a table containing all the flights appear. In the table, the columns will represent the number of flights, date of the flight, number of airlines, destination, time of taking off of the plane, and time of plane arrival to destination. The airline button once clicked, a table with two columns appear, one representing the ID and one the airline name. The makes button once clicked, a table with 7 columns appear, representing the reservation number, ticket amount, total price, date of flight, flight number, class and destination. The passengers button once clicked, a table with two columns appear, one representing user ID and one the reservation number. 
+In the dashboard, another button under the name of absent in flight appears, the admin can write the number of flights he wants to know if anyone missed the flight. Once he submits the number of flights, the absent user’s information appears, which are the customer ID, his username, his full name and number of children. At the bottom, a sentence stating the total number of absent customers is written.
+
+
 ![hy5](https://user-images.githubusercontent.com/104697889/189723389-4f40831a-9b57-4ba9-be6a-327655d2b218.PNG)
 ![hyy](https://user-images.githubusercontent.com/104697889/189723410-e1fc00a1-6cbe-44d8-a449-288c9c554b4c.PNG)
